@@ -1,0 +1,158 @@
+﻿/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal header */
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f5f5f5;
+    position: relative;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Close button */
+.close {
+    color: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    .close:hover {
+        color: #555;
+    }
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto; /* Center horizontally */
+    margin-top: 10%; /* Center vertically */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    position: relative;
+}
+
+/* Modal body */
+.modal-body {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+    /* Add some spacing between paragraphs */
+    .modal-body p {
+        margin-bottom: 15px;
+    }
+
+    /* Style for links */
+    .modal-body a {
+        color: #007bff;
+        text-decoration: underline;
+    }
+
+    /* Style for buttons */
+    .modal-body .btn {
+        padding: 8px 16px; /* Adjust padding for smaller buttons */
+        font-size: 14px; /* Slightly smaller font size */
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+        .modal-body .btn:hover {
+            background-color: #0056b3;
+        }
+
+    /* Style for form inputs */
+    .modal-body input[type="text"],
+    .modal-body select,
+    .modal-body textarea {
+        width: 100%;
+        padding: 8px; /* Reduced padding */
+        /*margin-bottom: 15px;*/
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box; /* Ensure the padding is included in the width */
+        font-size: 14px; /* Slightly smaller font size */
+        line-height: 1.4; /* Reduced line-height */
+        background-color: #fff;
+        color: #333;
+    }
+
+/* Override default Select2 styling */
+.select2-container--default .select2-selection--single {
+    height: 36px; /* Reduced height */
+    border: 1px solid #ccc; /* Match the border of the form control */
+    border-radius: 5px; /* Match the border radius of the form control */
+    box-sizing: border-box; /* Ensure the padding is included in the width */
+}
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        line-height: 28px; /* Vertically center the text */
+        padding-left: 8px; /* Reduced padding */
+        color: #333; /* Text color */
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__arrow {
+        height: 36px; /* Reduced height */
+        right: 8px; /* Position the arrow within the border */
+    }
+
+.select2-results__option:hover {
+    background-color: rgba(255, 216, 0, 0.5); /* Adjust the opacity for a lighter shade */
+    cursor: pointer;
+}
+
+
+/* Style for form labels */
+.modal-body label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Style for form group container */
+.modal-body .form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.modal-body .select2-container {
+    width: 100% !important; /* Ensure Select2 takes full width */
+}
+
+/* For devices up to 768px width */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%; /* Adjust the width as needed */
+    }
+}
+
+/* For devices up to 576px width */
+@media (max-width: 576px) {
+    .modal-content {
+        width: 95%; /* Adjust the width as needed */
+    }
+}

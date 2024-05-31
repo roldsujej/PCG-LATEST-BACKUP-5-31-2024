@@ -1,0 +1,108 @@
+﻿body {
+    font-family: Arial, sans-serif;
+}
+
+.button-container-large,
+.button-container-regular,
+.button-container-small {
+/*    display: flex;*/
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 10px;
+    gap: 10px;
+    width: 100%;
+}
+
+    .button-container-large label,
+    .button-container-regular label,
+    .button-container-small label {
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .button-container-large button,
+    .button-container-regular button,
+    .button-container-small button {
+        margin: 5px 0;
+    }
+
+.btn {
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #E6C206;
+}
+
+    .btn-primary:hover{
+
+    }
+
+    .btn-approve {
+        background-color: #2288f5;
+    }
+
+    .btn-approve:hover {
+        background-color: #1d71cb;
+    }
+
+.btn-decline {
+    background-color: #bd2130;
+}
+
+    .btn-decline:hover {
+        background-color: darkred;
+    }
+
+.btn-update {
+    background-color: #fd7e14;
+}
+
+    .btn-update:hover {
+        background-color: #c6610f;
+    }
+
+.btn-gray {
+    background-color: rgb(169, 166, 164);
+}
+
+    .btn-gray:hover {
+        background-color: #aaaaaa;
+    }
+
+.btn-finish {
+    background-color: #2da631;
+}
+
+    .btn-finish:hover {
+        background-color: #4bd24f;
+    }
+
+/* Size variations */
+.btn-large {
+    padding: 15px 30px;
+    font-size: 20px;
+}
+
+.btn-regular {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.btn-small {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+    .button-container-large,
+    .button-container-regular,
+    .button-container-small {
+        display: block;
+    }
+}

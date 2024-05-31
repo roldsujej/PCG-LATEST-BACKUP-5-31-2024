@@ -1,0 +1,56 @@
+﻿
+<h1 style="text-align:center">Task Details</h1>
+<input class="input" name="text" id="search" type="text" placeholder="Search here..." onkeyup="searchTable()">
+<div class="table-container">
+    <table class="custom-table">
+        <thead>
+            <tr>
+                <th class="text-center text-uppercase">Task No.</th>
+                <th class="text-center text-uppercase">Task</th>
+                <th class="text-center text-uppercase">Remarks</th>
+                <th class="text-center text-uppercase">Description</th>
+                <th class="text-center text-uppercase">Added By</th>
+                <th class="text-center text-uppercase">Date Forwarded</th>
+                <th class="text-center text-uppercase">Date Received</th>
+                <th class="text-center text-uppercase">Assignee</th>
+                <th class="text-center text-uppercase">Status</th>
+            </tr>
+        </thead>
+        <tbody id="taskDetailsBody">
+            @foreach (System.Data.DataRow dr in ViewBag.Tasklog.Rows)
+            {
+                <tr>
+                    <td class="text-center text-nowrap">@dr["TaskID_Tasks"].ToString()</td>
+                    <td class="text-center text-nowrap">@dr["Task"].ToString()</td>
+                    <td class="text-center text-nowrap">@dr["Remarks"].ToString()</td>
+                    <td class="text-center text-nowrap">@dr["Description"].ToString()</td>
+                    <td class="text-center text-nowrap">@dr["AddedBy"].ToString()</td>
+                    <td class="text-center text-nowrap">@dr["DateFwd"].ToString()</td>
+                    <td class="text-center text-nowrap">@dr["DateRcv"].ToString()</td>
+                    <td class="text-center text-nowrap">@dr["Name"].ToString()</td>
+                    @if (dr["Status"].ToString() == "Approved")
+                    {
+                        <td class="text-center text-nowrap">In Progress</td>
+                    }
+                    else if (dr["Status"].ToString() == "Waiting" || dr["Status"].ToString() == "Pending")
+                    {
+                        <td class="text-center text-nowrap">Pending</td>
+                    }
+                    else
+                    {
+                        <td class="text-center text-nowrap">idk</td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+    <!-- Pagination controls -->
+    <ul class="pagination modal-1">
+        <li><a href="#" class="prev" onclick="prevPage()">&laquo;</a></li>
+        <li id="pageNumbers">
+            <!-- Page numbers will be inserted here -->
+        </li>
+        <li><a href="#" class="next" onclick="nextPage()">&raquo;</a></li>
+    </ul>
+  
+</div>

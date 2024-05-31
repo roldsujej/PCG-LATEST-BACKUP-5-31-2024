@@ -1,0 +1,205 @@
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\appsettings.json
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\pcg.exe
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\pcg.deps.json
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\pcg.runtimeconfig.json
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\pcg.runtimeconfig.dev.json
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\pcg.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\pcg.pdb
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\pcg.Views.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\pcg.Views.pdb
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\pcg.csproj.AssemblyReference.cache
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\pcg.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\pcg.AssemblyInfoInputs.cache
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\pcg.AssemblyInfo.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\pcg.csproj.CoreCompileInputs.cache
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\pcg.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\pcg.RazorAssemblyInfo.cache
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\pcg.RazorAssemblyInfo.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\scopedcss\bundle\pcg.styles.css
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\staticwebassets\pcg.StaticWebAssets.Manifest.cache
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\pcg.TagHelpers.input.cache
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\pcg.TagHelpers.output.cache
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\pcg.RazorCoreGenerate.cache
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\pcg.RazorTargetAssemblyInfo.cache
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\pcg.RazorTargetAssemblyInfo.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\pcg.Views.pdb
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\pcg.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\refint\pcg.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\pcg.pdb
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\pcg.genruntimeconfig.cache
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\ref\pcg.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\pcg.csproj.CopyComplete
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\Home\Login.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\Home\Register.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\Shared\_Admin.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\Shared\_User.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\User\Index.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\User\ChangeInfo.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\AddSite.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\ChangeInfo.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\Sites.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\User\Sites.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\AddTask.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\TaskDetail.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\TaskForward.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\History.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\Pending.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\MyTask.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\User\TaskDetail.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\Forwarded.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\SiteStatus.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\SitePending.cshtml.g.cs
+C:\Users\Cybill\Desktop\random testing\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\AllTask.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\appsettings.json
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\pcg.exe
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\pcg.deps.json
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\pcg.runtimeconfig.json
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\pcg.runtimeconfig.dev.json
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\pcg.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\pcg.pdb
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\pcg.Views.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\pcg.Views.pdb
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\pcg.csproj.AssemblyReference.cache
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\pcg.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\pcg.AssemblyInfoInputs.cache
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\pcg.AssemblyInfo.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\pcg.csproj.CoreCompileInputs.cache
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\pcg.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\pcg.RazorAssemblyInfo.cache
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\pcg.RazorAssemblyInfo.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\pcg.sourcelink.json
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\pcg.TagHelpers.input.cache
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\pcg.TagHelpers.output.cache
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\pcg.RazorCoreGenerate.cache
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\AddSite.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\AddTask.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\AllTask.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\ChangeInfo.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\Forwarded.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\History.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\MyTask.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\Pending.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\SitePending.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\Sites.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\SiteStatus.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\TaskDetail.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\TaskForward.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Home\Login.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Home\Register.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Shared\_Admin.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Shared\_User.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\User\ChangeInfo.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\User\Index.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\User\Sites.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\User\TaskDetail.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\pcg.RazorTargetAssemblyInfo.cache
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\pcg.RazorTargetAssemblyInfo.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\pcg.Views.pdb
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\scopedcss\bundle\pcg.styles.css
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\staticwebassets\pcg.StaticWebAssets.Manifest.cache
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\staticwebassets\pcg.StaticWebAssets.Pack.cache
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\staticwebassets\msbuild.pcg.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\staticwebassets\msbuild.build.pcg.props
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.pcg.props
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.pcg.props
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\pcg.csproj.Up2Date
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\pcg.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\refint\pcg.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\pcg.pdb
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\pcg.genruntimeconfig.cache
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\ref\pcg.dll
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\Variation.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\_TaskDetail.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\_AddTask.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\_ForwardTask.cshtml.g.cs
+C:\Users\Eric\Desktop\pcg\pcg\pcg\obj\Debug\net5.0\Razor\Views\Admin\DocumentRequest.cshtml.g.cs

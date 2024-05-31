@@ -1,0 +1,379 @@
+﻿@model pcg.Models.SitesModel
+
+@{
+    ViewData["Title"] = "Sites";
+} 
+
+
+<!-- Include jQuery if not already included -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="~/css/modal.css" />
+
+
+
+
+<!-- Select2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+@*----------------------------------MODALS-----------------------------------------------*@
+<div class="modal fade" id="addSiteModal"  role="dialog" aria-labelledby="addSiteModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <!-- Modal header with a title and close button -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="addSiteModalLabel">Add Site</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+     
+            <!-- Modal body containing the form for adding a site -->
+            <div class="modal-body">
+                <form asp-action="AddSite" method="post">
+                    <!-- Display validation errors summary -->
+                    <!----------  <div asp-validation-summary="All" class="text-danger"></div>----->
+                    <!-- Form group for the Client field -->
+                    <div class="form-group">
+                        <label asp-for="Client" class="control-label">Client</label>
+                        <input asp-for="Client" class="form-control" />
+                        <!-- Display validation errors for Client -->
+                        <!---------- <span asp-validation-for="Client" class="text-danger"></span>------>
+                    </div>
+                    <!-- Form group for the Site field -->
+                    <div class="form-group">
+                        <label asp-for="Site" class="control-label">Site</label>
+                        <input asp-for="Site" class="form-control" />
+                        <!-- Display validation errors for Site -->
+                        <!---------- <span asp-validation-for="Site" class="text-danger"></span>------>
+                    </div>
+                    <!-- Form group for the Operation Manager field -->
+                    <div class="form-group">
+                        <label asp-for="SiteOM" class="control-label">Operation Manager</label>
+                        <select asp-for="SiteOM" class="form-control" id="SiteOM">
+                            <!-- Populate the options dynamically from ViewBag.Userlist -->
+                            @foreach (System.Data.DataRow dr in ViewBag.Userlist.Rows)
+                            {
+                                if (@dr["Position"].ToString() == "Operation Manager")
+                                {
+                                    <option value="@dr["Id"].ToString()">@dr["Name"].ToString()</option>
+                                }
+                            }
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="SiteOM" class="control-label">Operation Manager</label>
+                        <select itemid="SiteOM" asp-for="SiteOM" class="form-control" id="SiteOM">
+                            <!-- Populate the options dynamically from ViewBag.Userlist -->
+                            @foreach (System.Data.DataRow dr in ViewBag.Userlist.Rows)
+                            {
+                                if (@dr["Position"].ToString() == "Operation Manager")
+                                {
+                                    <option value="@dr["Id"].ToString()">@dr["Name"].ToString()</option>
+                                }
+                            }
+                        </select>
+
+                    </div>
+
+              
+
+                    <div class="form-group">
+                        <label asp-for="SiteSOM" class="control-label">Sr. Operation Manager</label>
+                        <div class="searchable-dropdown">
+                            <input type="text" id="search-input-SOM" class="search-input" placeholder="Search..." onkeyup="filterDropdown('search-input-SOM', 'dropdown-content-SOM')">
+                            <span class="separator"></span>
+                            <span class="caret" onclick="toggleDropdown('dropdown-content-SOM')"></span>
+                            <div class="dropdown-content" id="dropdown-content-SOM">
+                                <ul>
+
+                                    @foreach (System.Data.DataRow dr in ViewBag.Userlist.Rows)
+                                    {
+                                        if (@dr["Position"].ToString() == "Sr. Operation Manager")
+                                        {
+                                            <li value="@dr["Id"].ToString()">@dr["Name"].ToString()</li>
+                                        }
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="SiteSC" class="control-label">Site Coordinator</label>
+                        <div class="searchable-dropdown">
+                            <input type="text" id="search-input-4" class="search-input" placeholder="Search..." onkeyup="filterDropdown('search-input-4', 'dropdown-content-4')">
+                            <span class="separator"></span>
+                            <span class="caret" onclick="toggleDropdown('dropdown-content-4')"></span>
+                            <div class="dropdown-content" id="dropdown-content-4">
+                                <ul>
+
+                                    @foreach (System.Data.DataRow dr in ViewBag.Userlist.Rows)
+                                    {
+                                        if (@dr["Position"].ToString() == "Site Coordinator")
+                                        {
+                                            <li value="@dr["Id"].ToString()">@dr["Name"].ToString()</li>
+                                        }
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="SiteTK" class="control-label">Time Keeper</label>
+                        <div class="searchable-dropdown">
+                            <input type="text" id="search-input-5" class="search-input" placeholder="Search..." onkeyup="filterDropdown('search-input-5', 'dropdown-content-5')">
+                            <span class="separator"></span>
+                            <span class="caret" onclick="toggleDropdown('dropdown-content-5')"></span>
+                            <div class="dropdown-content" id="dropdown-content-5">
+                                <ul>
+
+                                    @foreach (System.Data.DataRow dr in ViewBag.Userlist.Rows)
+                                    {
+                                        if (@dr["Position"].ToString() == "Time Keeper")
+                                        {
+                                            <li value="@dr["Id"].ToString()">@dr["Name"].ToString()</li>
+                                        }
+                                    }
+                                
+                                </ul>
+                            </div>
+                        </div>
+                      
+                     
+                    </div>
+
+                 
+
+                 
+                    <!-- Add more form groups for additional fields (e.g., Sr. Operation Manager, Site Coordinator, Time Keeper) -->
+                    <!-- Submit button for the form -->
+                    <button type="submit" class="btn-primary">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@*----------------------------------ADD TASK MODAL-----------------------------------------------*@
+<div class="modal fade" id="addTaskModal"  role="dialog" aria-labelledby="addTaskModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <!-- Modal header with a title and close button -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="addSiteModalLabel">Add Task</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!-- Modal body for adding task content -->
+            <div class="modal-body">
+                <!-- Content from AddTask.cshtml will be loaded here -->
+                @await Html.PartialAsync("AddTask")
+
+              
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+
+ 
+
+
+
+
+
+<div class="card">
+
+  
+
+    <div class="top-card">
+        <h1>Sites</h1>
+    </div>
+
+    <input class="input" name="text" id="search" type="text" placeholder="Search here..." onkeyup="searchTable()">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addSiteModal">
+        Add Site
+    </button>
+
+    <div class="table-container">
+
+        <table class="custom-table">
+            <thead>
+                <tr>
+                    <th class="text-center text-uppercase">Site ID</th>
+                    <th class="text-center text-uppercase">Client</th>
+                    <th class="text-center text-uppercase">Site</th>
+                    <th class="text-center text-uppercase">OM</th>
+                    <th class="text-center text-uppercase">Details</th>
+                </tr>
+            </thead>
+            <tbody id="myTable">
+                @foreach (System.Data.DataRow dr in ViewBag.Sitelist.Rows)
+                {
+                    <tr>
+                        <td class="text-center text-nowrap">@dr["SiteId"].ToString()</td>
+                        <td class="text-center text-nowrap">@dr["Client"].ToString()</td>
+                        <td class="text-center text-nowrap">@dr["Site"].ToString()</td>
+                        <td class="text-center text-nowrap">@dr["Name"].ToString()</td>
+                        <td class="text-center text-nowrap">
+                            <div style="text-align:center">
+                                <form style="display: inline-block; margin-right" asp-action="AddTask" method="get">
+                                    <input type="hidden" asp-for="SiteId" value="@dr["SiteId"].ToString()" />
+                                    <button type="button" class="btn-primary" data-toggle="modal" data-target="#addTaskModal" onclick="loadAddTaskContent()">
+                                        Add Task
+                                    </button>
+
+                                </form>
+
+                                <button type="button" class="btn-primary" onclick="getTaskDetails('@dr["SiteId"].ToString()')">
+                                    Task Details
+                                </button>
+
+                              @*   <a href="@Url.Action("AddTask", "Admin", new { siteId = dr["SiteId"] })" class="text-link">Add Task</a> *@
+
+
+                               
+
+                            </div>
+                        </td>
+                    </tr>
+                  @*   <tr style="display: none;">
+                        <td colspan="3">
+                            <div>
+                                @foreach (System.Data.DataRow dar in ViewBag.Tasklist.Rows)
+                                {
+                                    if (dar["SiteReqId"].ToString() == dr["SiteId"].ToString())
+                                    {
+                                        <div style="text-align:center">
+                                            <a href="@Url.Action("TaskDetail", "Admin", new { siteId = dar["SiteReqId"] })">
+                                                @dar["Task"].ToString() @dar["Remarks"].ToString()
+                                            </a>
+                                        </div>
+                                    }
+                                }
+                            </div>
+                        </td>
+                    </tr> *@
+                   
+                
+                }
+            </tbody>
+        </table>
+        <ul class="pagination modal-1">
+            <li><a href="#" class="prev" onclick="prevPage()">&laquo</a></li>
+            <li id="pageNumbers">
+                <!-- Page numbers will be inserted here -->
+            </li>
+
+            <li><a href="#" class="next" onclick="nextPage()">&raquo;</a></li>
+        </ul>
+
+        <br>
+      
+    </div>
+</div>
+
+
+<!-- Modal for displaying task details -->
+<div class="modal" id="viewDetailsModal" tabindex="-1" role="dialog" aria-labelledby="viewDetailModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <!-- Modal header with a title and close button -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="addSiteModalLabel">Task Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <!-- Modal body containing the task details table -->
+            <div class="modal-body">
+                <div class="table-container">
+                    <!-- Table for displaying task details -->
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th class="text-center text-uppercase">Task No.</th>
+                                <th class="text-center text-uppercase">Task</th>
+                                <th class="text-center text-uppercase">Remarks</th>
+                                <th class="text-center text-uppercase">Description</th>
+                                <th class="text-center text-uppercase">Added By</th>
+                                <th class="text-center text-uppercase">Date Forwarded</th>
+                                <th class="text-center text-uppercase">Date Received</th>
+                                <th class="text-center text-uppercase">Assignee</th>
+                                <th class="text-center text-uppercase">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="taskDetailsBody">
+                            <!-- Task details will be dynamically inserted here -->
+                        </tbody>
+                      
+
+                    </table>
+                  
+                   
+                </div>
+              
+               
+            </div>
+          
+        </div>
+    </div>
+</div>
+
+
+@* <script src="~/js/dropdown.js" asp-append-version="true"></script>
+ *@
+<script>
+
+  
+    function getTaskDetails(siteId) {
+        $.ajax({
+            url: '@Url.Action("TaskDetail", "Admin")', // Replace "YourControllerName" with the actual name of your controller
+            type: 'GET',
+            data: { siteId: siteId },
+            success: function (data) {
+                $('#viewDetailsModal .modal-body').html(data);
+                $('#viewDetailsModal').modal('show');
+            },
+            error: function (xhr, status, error) {
+                console.error(xhr.responseText);
+            }
+        });
+    }
+
+    function loadAddTaskContent() {
+        var url = '@Url.Action("AddTask", "Admin")';
+        $.ajax({
+            url: url,
+            type: 'GET',
+            success: function (data) {
+                $('#addTaskModal .modal-body').html(data);
+            },
+            error: function (xhr, status, error) {
+                console.error(xhr.responseText);
+            }
+        });
+    }
+
+
+    /* FOR SELECT 2 */
+
+   
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('#SiteSOM').select2();
+    });
+    $(document).ready(function () {
+        $('#SiteOM').select2();
+    });
+
+</script>

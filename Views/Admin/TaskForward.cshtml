@@ -1,0 +1,77 @@
+﻿@model pcg.Models.VariationModel
+
+@{
+    ViewData["Title"] = "Forward";
+}
+<div class="card">
+    <div class="card1">
+
+        <form asp-controller="Admin" asp-action="TaskForward" method="post">
+            <label for="assigneeSelect">Select Assignee</label>
+            <select asp-for="AssignId" id="assigneeSelect" class="form-control-custom">
+
+                @foreach (System.Data.DataRow dar in ViewBag.Userlist.Rows)
+                {
+                    <option value="@dar["Id"].ToString()">
+                        @dar["Name"].ToString(): @dar["Position"].ToString()
+                    </option>
+                }
+            </select>
+
+
+            @foreach (System.Data.DataRow dr in ViewBag.Tasklog.Rows)
+            {
+                <input type="hidden" name="taskId" value="@dr["TaskId"].ToString()" />
+            }
+
+            <button type="submit" class="btn-primary">Forward</button>
+        </form>
+        </div>
+  
+   
+ 
+    <div class="table-container">
+        <h1 class="table-heading">You are forwarding this task:</h1>
+        <table class="custom-table">
+            <thead>
+                <tr>
+                    <th>TaskId</th>
+                    <th>Task</th>
+                    <th>Remarks</th>
+                    <th>Description</th>
+                    <th>Assignee</th>
+                </tr>
+            </thead>
+            <tbody id="myTable">
+                @foreach (System.Data.DataRow dr in ViewBag.Tasklog.Rows)
+                {
+                    <tr>
+                        <td>@dr["TaskId"].ToString()</td>
+                        <td>@dr["Task"].ToString()</td>
+                        <td>@dr["Remarks"].ToString()</td>
+                        <td>@dr["Description"].ToString()</td>
+                        <td>@dr["Name"].ToString()</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+     
+        </div>
+   
+    </div>
+
+   
+</div>
+
+@section scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#assigneeSelect').selectize({
+                allowEmptyOption: true,
+                create: false,
+                sortField: 'text'
+            });
+        });
+    </script>
+}

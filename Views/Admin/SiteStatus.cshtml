@@ -1,0 +1,50 @@
+﻿@model pcg.Models.SitesModel
+
+@{
+    ViewData["Title"] = "Sites";
+} 
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<div>
+<h1 style="text-align:center">Site Status</h1>
+</div>
+<input class="form-control" type="text" id="search" placeholder="Search here" onkeyup="searchTable()">
+<table class="custom-table">
+    <thead>
+        <tr>
+            <th class="text-center text-uppercase">Client</th>
+            <th class="text-center text-uppercase">Site</th>
+            <th class="text-center text-uppercase">Status</th>
+            <th class="text-center text-uppercase">Action</th>
+        </tr>
+    </thead>
+    <tbody id="myTable">
+        @foreach (System.Data.DataRow dr in ViewBag.Sitelist.Rows)
+        {
+            <tr class="row-click" onclick="toggleRows(this)">
+                <td class="text-center text-nowrap">@dr["Client"].ToString()</td>
+                <td class="text-center text-nowrap">@dr["Site"].ToString()</td>
+                <td class="text-center text-nowrap">@dr["Status"].ToString()</td>
+                <td class="text-center text-nowrap">
+                    @if(dr["Status"].ToString() == "Inactive")
+                    {
+                        <form asp-action="SiteActivate" method="post">                
+                            <input type="hidden" asp-for="SiteId" value="@dr["SiteId"].ToString()" />
+                            <input type="submit" value="Activate" class="btn btn-primary"/>
+                        </form>
+                    }
+                    else if(dr["Status"].ToString() == "Active")
+                    {
+                        <form asp-action="SiteDeactivate" method="post">                
+                            <input type="hidden" asp-for="SiteId" value="@dr["SiteId"].ToString()" />
+                            <input type="submit" value="Deactivate" class="btn btn-danger"/>
+                        </form>
+                    }
+                </td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+  

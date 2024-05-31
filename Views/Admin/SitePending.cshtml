@@ -1,0 +1,65 @@
+﻿@model pcg.Models.SitesModel
+
+@{
+    ViewData["Title"] = "Sites";
+}
+
+<link rel="stylesheet" href="~/css/styles.css" />
+
+<div class="card">
+
+    <div class="top-card">
+        <h1>Pending Sites</h1> 
+
+    </div>
+
+       <input class="input" name="text" id="search" type="text" placeholder="Search here..." onkeyup="searchTable()">
+@if (ViewBag.Sitelist.Rows.Count == 0)
+{
+    <div class="empty-table-message">
+        <p>No pending sites at the moment...</p>
+    </div>
+}
+else
+{
+    <table class="custom-table">
+        <!-- Table header -->
+        <thead>
+            <tr>
+                <th class="text-center text-uppercase">Site ID</th>
+                <th class="text-center text-uppercase">Client</th>
+                <th class="text-center text-uppercase">Site</th>
+                <th class="text-center text-uppercase">Status</th>
+                <th class="text-center text-uppercase">Action</th>
+            </tr>
+        </thead>
+        <tbody id="myTable">
+            <!-- Table rows -->
+            @foreach (System.Data.DataRow dr in ViewBag.Sitelist.Rows)
+            {
+                <tr class="row-click" onclick="toggleRows(this)">
+                    <td class="text-center text-nowrap">@dr["SiteId"].ToString()</td>
+                    <td class="text-center text-nowrap">@dr["Client"].ToString()</td>
+                    <td class="text-center text-nowrap">@dr["Site"].ToString()</td>
+                    <td class="text-center text-nowrap">@dr["Status"].ToString()</td>
+                    <td class="text-center text-nowrap">
+                        <form asp-action="SiteApprove" method="post">
+                            <input type="hidden" asp-for="SiteId" value="@dr["SiteId"].ToString()" />
+                            <input type="submit" value="Approve" class="btn btn-primary" />
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+</div>
+
+<ul class="pagination modal-1">
+    <li><a href="#" class="prev" onclick="prevPage()">&laquo;</a></li>
+    <li id="pageNumbers">
+        <!-- Page numbers will be inserted here -->
+    </li>
+    <li><a href="#" class="next" onclick="nextPage()">&raquo;</a></li>
+</ul>
+<br>

@@ -1,0 +1,157 @@
+﻿@model pcg.Models.VariationModel
+
+@{
+    ViewData["Title"] = "My Task";
+}
+
+
+
+
+
+
+
+@*----------------------------------TASK FORWARD MODAL-----------------------------------------------*@
+<!-- Task Forward Modal -->
+
+<div class="modal fade" id="taskForwardModal" role="dialog" aria-labelledby="taskForwardModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <!-- Modal header with a title and close button -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="taskForwardModalLabel">Forward Task</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!-- Modal body for adding task content -->
+            <div class="modal-body">
+                @await Html.PartialAsync("_ForwardTask")
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="card">
+    <div class="top-card">
+        <h1>My Tasks</h1>
+
+    </div>
+
+    <input class="input" name="text" id="search" type="text" placeholder="Search here..." onkeyup="searchTable()">
+    @if (ViewBag.Tasklog.Rows.Count == 0)
+{
+        <div class="empty-table-message">
+            <p>No tasks entry...</p>
+        </div>
+}
+else
+{
+    <div class="table-container">
+        <table id="custom-table" class="custom-table">
+
+            <thead>
+                <tr>
+                    <th>Task No.</th>
+                    <th>Task</th>
+                    <th>Remarks</th>
+                    <th>Description</th>
+                    <th>Client</th>
+                    <th>Added By</th>
+                    <th>Date Forwarded</th>
+                    <th>Date Received</th>
+                    <th>Assignee</th>
+                    <th>Name</th>
+
+                </tr>
+            </thead>
+            <tbody id="myTable">
+                @foreach (System.Data.DataRow dr in ViewBag.Tasklog.Rows)
+                {
+                    <tr onclick="toggleRows(this)">
+                        <td class="text-center text-nowrap">@dr["TaskID_Tasks"].ToString()</td>
+                        <td class="text-center text-nowrap">@dr["Task"].ToString()</td>
+                        <td class="text-center text-nowrap">@dr["Remarks"].ToString()</td>
+                        <td class="text-center text-nowrap">@dr["Description"].ToString()</td>
+                        <td class="text-center text-nowrap">@dr["Client"].ToString() @dr["Site"].ToString()</td>
+                        <td class="text-center text-nowrap">@dr["AddedBy"].ToString()</td>
+                        <td class="text-center text-nowrap">@dr["DateFwd"].ToString()</td>
+                        <td class="text-center text-nowrap">@dr["DateRcv"].ToString()</td>
+                        <td class="text-center text-nowrap">@dr["Name"].ToString()</td>
+                        <td>
+                               @*   <a asp-controller="Admin" asp-action="TaskForward" asp-route-taskId="@dr["TaskID_Tasks"].ToString()" class="btn btn-primary btn-block">Forward</a> *@
+                                <button type="button" class="btn btn-primary btn-regular" data-toggle="modal" data-target="#taskForwardModal">
+                                    Forward Task
+                                </button>
+                            @*
+                        <form asp-controller="Admin" asp-action="TaskForward" asp-route-taskId="@dr["TaskID_Tasks"].ToString()">
+                        <input type="hidden" name="taskId" value="@dr["TaskID_Tasks"].ToString()">
+                        <button type="submit" id="forwardButton" class="contactButton">
+                        Forward
+                        <div class="iconButton">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                        fill="currentColor"></path>
+                        </svg>
+                        </div>
+                        </button>
+                        </form>
+                        *@
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+            <ul class="pagination modal-1">
+                <li><a href="#" class="prev" onclick="prevPage()">&laquo</a></li>
+                <li id="pageNumbers">
+                    <!-- Page numbers will be inserted here -->
+                </li>
+
+                <li><a href="#" class="next" onclick="nextPage()">&raquo;</a></li>
+            </ul>
+
+            <br>
+          
+
+    </div>
+    }
+
+
+   @*  <script>
+        $(document).ready(function () {
+            $('#openTaskForwardModal').on('click', function () {,
+                var taskId = $(this).data('taskid');
+                $.ajax({
+                    url: '@Url.Action("GetForwardTaskModalData", "Admin")',
+                    type: 'GET',
+                    data: { taskId: taskId },
+                    success: function (result) {
+                        $('#taskForwardModalContent').html(result);
+                        $('#taskForwardModal').modal('show');
+                    }
+                });
+            });
+
+            $(document).on('submit', 'form', function (e) {
+                e.preventDefault();
+                $.ajax({
+                    url: $(this).attr('action'),
+                    type: 'POST',
+                    data: $(this).serialize(),
+                    success: function (response) {
+                        if (response.success) {
+                            $('#taskForwardModal').modal('hide');
+                            alert('Task forwarded successfully!');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+ *@

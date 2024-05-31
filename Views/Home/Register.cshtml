@@ -1,0 +1,87 @@
+﻿@model pcg.Models.UsersModel
+
+@{
+    ViewData["Title"] = "User Registration";
+}
+
+
+@* <div class="row">
+    <div class="col-md-12">
+        <form asp-action="Register">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label">Email</label>
+                <input asp-for="Email" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="ContactNo" class="control-label">Contact Number</label>
+                <input asp-for="ContactNo" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Position" class="control-label"></label>
+                <select asp-for="Position" class="form-control">
+                    @foreach(System.Data.DataRow dr in ViewBag.Poslist.Rows)
+                    {
+                    <option value="@dr["Position"].ToString()">@dr["Position"].ToString()</option>
+                    }
+                </select>                   
+            </div> 
+            <div class="form-group">
+                <label asp-for="Username" class="control-label"></label>
+                <input asp-for="Username" class="form-control"/>
+            </div>                                               
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" type="password" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Confirm" class="control-label"></label>
+                <input asp-for="Confirm" type="password" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register" asp-action="Register" class="btn btn-block btn-secondary btn-dark"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+ *@
+
+<div class="register-container">
+    <div class="logo">
+        <img src="/images/logo.png" alt="Logo">
+    </div>
+    <div class="register-form">
+        <form>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit" class="btn-primary">Register</button>
+            <p class="register-link">
+                Already have an account? <a asp-action="Login" style="color:black; text-decoration:underline">Login here!</a>
+            </p>
+        </form>
+    </div>
+ @section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

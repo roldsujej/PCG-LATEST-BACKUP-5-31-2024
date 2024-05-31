@@ -1,0 +1,65 @@
+﻿@model pcg.Models.VariationModel
+
+@{
+    ViewData["Title"] = "History";
+}
+<div class="card">
+    <div class="top-card">
+        <h1 >Tasks History</h1>
+
+    </div>
+   
+    <input class="input" name="text" id="search" type="text" placeholder="Search here..." onkeyup="searchTable()">
+ 
+   <div class="table-container">
+
+
+<table class="custom-table">
+    <thead>
+        <tr>
+            <th class="text-center text-uppercase">Log No.</th>
+            <th class="text-center text-uppercase">Task No.</th>
+            <th class="text-center text-uppercase">Assigned/Forwarded</th>
+            <th class="text-center text-uppercase">Added By</th>
+            <th class="text-center text-uppercase">Client/Site</th>
+            <th class="text-center text-uppercase">Status</th>
+            <th class="text-center text-uppercase">Date Start</th>
+            <th class="text-center text-uppercase">Date Forwarded</th>
+            <th class="text-center text-uppercase">Date Received</th>
+            <th class="text-center text-uppercase">Date Completed</th>         
+        </tr>
+    </thead>
+    <tbody id="myTable" class="viewbag-data">
+        @foreach (System.Data.DataRow dr in ViewBag.Tasklog.Rows)
+        {
+        <tr>
+            <td>@dr["LogId"].ToString()</td>
+            <td>@dr["TaskId"].ToString()</td>
+            <td>@dr["Name"].ToString()</td>
+            <td>@dr["AddedBy"].ToString()</td>
+            <td>@dr["Client"].ToString() @dr["Site"].ToString()</td>
+            <td>@dr["Status"].ToString()</td>
+            <td>@dr["DateStart"].ToString()</td>
+            <td>@dr["DateFwd"].ToString()</td>
+            <td>@dr["DateRcv"].ToString()</td>
+            <td>@dr["DateClr"].ToString()</td>
+        </tr>
+        }
+    </tbody>
+</table>
+       
+      
+    </div>
+    <ul class="pagination modal-1">
+        <li><a href="#" class="prev" onclick="prevPage()">&laquo</a></li>
+        <li id="pageNumbers">
+            <!-- Page numbers will be inserted here -->
+        </li>
+
+        <li><a href="#" class="next" onclick="nextPage()">&raquo;</a></li>
+    </ul>
+
+    <br>
+</div>
+
+

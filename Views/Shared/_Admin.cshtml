@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - pcg</title>
+    @*     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
+    <!-- Custom CSS -->
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/styles.css" />
+    <link rel="stylesheet" href="~/css/modal.css" />
+    <link rel="stylesheet" href="~/css/customDropDowncss.css" />
+    <link rel="stylesheet" href="~/css/loading.css" />
+    <link rel="stylesheet" href="~/css/button.css" />
+
+    <!-- Select2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+
+</head>
+<body>
+ 
+   
+    <div class="container">
+        <div class="sidebar active">
+            <div class="menu-btn">
+                <i class="ph-bold ph-caret-left"></i>
+            </div>
+            <div class="head">
+                <div class="user-img">
+                    <img src="~/images/logo.jpg" alt="" />
+
+                </div>
+
+                <div class="user-img1">
+                    <img src="~/images/userimg2.png" alt="" />
+
+                </div>
+              
+               @*  <div class="user-details">
+                    <h1 class="name">PCG</h1>
+                </div> *@
+            </div>
+            <div class="nav">
+                <div class="menu">
+                    <p class="title">Main</p>
+                    <ul>
+                        <li>
+                            <a href="/Admin/Index">
+                                <i class="ph-thin ph-house-line"></i>
+                                <span class="text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="ph-thin ph-check-square-offset"></i>
+                                <span class="text">Task</span>
+                                <i class="arrow ph-bold ph-caret-double-down"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="/Admin/MyTask">
+                                        <span class="text">My Task</span>
+                                        </a>
+                                    
+                                </li> 
+                                <li>
+                                    <a href="/Admin/Pending">
+                                        <span class="text">Pending</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/Admin/History">
+                                        <span class="text">History</span>
+                                    </a>
+                                </li>
+                                @*
+                                <li>
+                                    <a href="/Admin/TaskForward">
+                                        <span class="text">History</span>
+                                    </a>
+                                </li>
+                                *@
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="ph-thin ph-check-square-offset"></i>
+                                <span class="text">Elements</span>
+                                <i class="arrow ph-bold ph-caret-double-down"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="/Admin/Variation">
+                                        <span class="text">Buttons</span>
+                                    </a>
+                                </li>
+                                <li>
+                                 <a href="/Admin/DocumentRequest">
+                                        <span class="text">Document Request</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="text">Query</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="ph-thin ph-globe"></i>
+                                <span class="text">Sites</span>
+                                <i class="arrow ph-bold ph-caret-double-down"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="/Admin/Sites">
+                                        <span class="text">Sites</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/Admin/SitePending">
+                                        <span class="text">Pending</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/Admin/History">
+                                        <span class="text">History</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="menu">
+                <p class="title">Account</p>
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="ph-thin ph-sign-out"></i>
+                            <span class="text">Logout</span>
+                            <div></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        
+
+        <div class="content">
+            <div class="smallMenu-btn" onclick="toggleSidebar()">
+                <i class="ph-bold ph-caret-right"></i>
+            </div>
+           
+      
+              <div class="main-content">
+                @RenderBody()
+              
+
+              </div>
+             
+               
+         
+           
+          
+        </div>
+      
+
+        <div id="loading-overlay" class="loader"></div>
+
+     
+      
+    </div>
+
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Select2 JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@@phosphor-icons/web"></script>
+    <!-- Your custom scripts -->
+    <script src="~/js/script.js" asp-append-version="true"></script>
+    <script src="~/js/pagination.js" asp-append-version="true"></script>
+   @*  <script src="~/js/customdropdown.js" asp-append-version="true"></script> *@
+    <script src="~/js/spinner.js" asp-append-version="true"></script>
+    <script src="~/js/dropdown.js" asp-append-version="true"></script>
+   
+
+ 
+  
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
